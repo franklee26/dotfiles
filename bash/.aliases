@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# make aliases sudoable
+alias sudo="sudo "
+
+# navigation
+alias ..="cd .."
+alias ...="cd ../.."
+
+# ls aliases
+alias la="ls -A"
+alias ll="ls -Al"
+
+# homebrew aliases
+alias brewery='brew update && brew upgrade && brew cleanup'
