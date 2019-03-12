@@ -11,5 +11,8 @@ alias ...="cd ../.."
 alias la="ls -A"
 alias ll="ls -Al"
 
+# git aliases
+alias gc="git commit -a"
+
 # homebrew aliases
 alias brewery='brew update && brew upgrade && brew cleanup'
