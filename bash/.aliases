@@ -12,7 +12,8 @@ alias la="ls -A"
 alias ll="ls -Al"
 
 # git aliases
-alias gc="git commit -a"
+alias gs="git stage *"
+alias gc="git commit -s"
 
 # homebrew aliases
 alias brewery='brew update && brew upgrade && brew cleanup'
