@@ -12,11 +12,14 @@ git config --global push.default simple
 git config --global user.email "dante.issaias@gmail.com"
 git config --global user.name "Dante Issaias"
 
-echo "setting up go..."
-brew install go
+packages=(
+  go
+  node
+  gnupg
+)
 
-echo "installing node..."
-brew install node 
+echo "installing packages..."
+brew install ${packages[@]}
 
 # Install Node modules
 modules=(
