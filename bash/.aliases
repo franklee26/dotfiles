@@ -12,8 +12,13 @@ alias la="ls -A"
 alias ll="ls -Al"
 
 # git aliases
+alias ga="git add *"
 alias gs="git stage *"
 alias gc="git commit -s"
+alias gp="git push"
 
 # homebrew aliases
 alias brewery='brew update && brew upgrade && brew cleanup'
+
+# devops aliases
+alias issaias-deploy='scp -r /Users/dante/Projects/issaias.net root@issaias.net:/var/www'
