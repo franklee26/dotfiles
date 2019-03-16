@@ -12,8 +12,8 @@ alias la="ls -A"
 alias ll="ls -Al"
 
 # git aliases
-alias ga="git add *"
-alias gs="git stage *"
+alias ga="git add -A"
+alias gs="git add -A"
 alias gc="git commit -s"
 alias gp="git push"
 
