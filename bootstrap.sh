@@ -1,3 +1,5 @@
+#!/usr/local/bin/bash
+
 # Update homebrew recipes
 brew update
 
