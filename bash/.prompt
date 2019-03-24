@@ -10,4 +10,4 @@ RESET=$(tput sgr0)
 GREEN=$(tput setaf 10)
 CYAN=$(tput setaf 6)
 
-PS1="▲ \W \[\$RESET\]"
+PS1="▲ \W/ \[\$RESET\]"
