@@ -38,12 +38,15 @@ npm install -g ${modules[@]}
 apps=(
   google-chrome
   firefox
-  iterm2
   sublime-text
+  visual-studio-code
   sketch
   alfred
   discord
   telegram-desktop
+  hyper
+  iterm2
+  paw
 )
 
 # Install apps to /Appl s   ications
@@ -55,7 +58,14 @@ brew cask install --appdir="/Applications" ${apps[@]}
 mkdir ~/Projects
 mkdir ~/Projects/go
 
+echo "setting up dotfiles..."
 # Source dot files
 echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
 echo 'export PATH="$HOME/.npm-packages/bin:$PATH"' >> ~/.profile
 source ~/.profile
+
+# Symlink Hyper Config
+rm ~/.hyper.js
+ln -s ~/.dotfiles/.hyper.js ~/.hyper.js
+
+echo "finished"
