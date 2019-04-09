@@ -1,5 +1,29 @@
 #!/bin/bash
 
+# gopath
+export GOPATH=$HOME/Projects/go
+
+# android stuff
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export FLUTTER_HOME=$HOME/.flutterlib
+
+# gpg
+export GPG_TTY=$(tty)
+
+# colors
+export CLICOLOR=1
+export LSCOLORS=ExGxdxDxCxegedhbadaced
+
+# set default editor
+export EDITOR='code'
+export VISUAL="$EDITOR"
+
+# path
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$FLUTTER_HOME/bin
 
 # recursively delete .DS_Store
 alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"

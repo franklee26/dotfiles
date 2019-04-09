@@ -1,10 +1,9 @@
-dotfiles
-========
+Personal Dotfiles
+=================
 
-These are my personal dotfiles.
+*Heavily inspired by Evan You's dotfiles.*
 
-Heavily inspired by Evan You's dotfiles.
-
-## License
-
-MIT 2019 - Dante Issaias
+- Bash customizations for macOS
+    - prompt
+    - aliases
+- iTerm2 colors
