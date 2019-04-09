@@ -1,10 +1,14 @@
 #!/usr/local/bin/bash
 
+# Before running this script:
+# sudo echo '/usr/local/bin/bash' >> /etc/shells
+
 # Update homebrew recipes
 brew update
 
 # Install and use latest bash
 brew install bash
+chsh -s /usr/local/bin/bash
 
 # Install git
 brew install git
@@ -44,7 +48,6 @@ apps=(
   alfred
   discord
   telegram-desktop
-  hyper
   iterm2
   paw
 )
@@ -63,9 +66,5 @@ echo "setting up dotfiles..."
 echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
 echo 'export PATH="$HOME/.npm-packages/bin:$PATH"' >> ~/.profile
 source ~/.profile
-
-# Symlink Hyper Config
-rm ~/.hyper.js
-ln -s ~/.dotfiles/.hyper.js ~/.hyper.js
 
 echo "finished"
