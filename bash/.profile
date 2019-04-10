@@ -10,6 +10,8 @@ BASH_SRC_PATH=$DOTFILES_PATH/bash
 
 bind 'set completion-ignore-case on'
 
+shopt -s autocd
+
 # edit this folder
 alias dot="cd ~/.dotfiles"
 # reload

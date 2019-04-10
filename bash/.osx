@@ -15,7 +15,7 @@ export CLICOLOR=1
 export LSCOLORS=ExGxdxDxCxegedhbadaced
 
 # set default editor
-export EDITOR='code'
+export EDITOR='vim'
 export VISUAL="$EDITOR"
 
 # path
