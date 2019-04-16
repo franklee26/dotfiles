@@ -9,3 +9,7 @@ Personal Dotfiles
 	- syntax highlighting
 	- keybinds
 - iTerm2 colors
+
+# Notes
+
+- startup can be quite slow due to nvm (see #2)
