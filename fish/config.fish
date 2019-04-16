@@ -11,6 +11,9 @@ set -x EDITOR vim
 # gpg
 set -x GPG_TTY (tty)
 
+# ls
+set -x LSCOLORS gxfxbEaEBxxEhEhBaDaCaD
+
 #path
 set PATH $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $ANDROID_HOME/platform-tools $PATH
 set PATH $FLUTTER_HOME/bin $PATH
