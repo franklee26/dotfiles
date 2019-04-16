@@ -17,5 +17,11 @@ alias dot="cd ~/.dotfiles"
 # reload
 alias rl="source ~/.profile; echo '~/.profile reloaded.'"
 
+if [[ $- == *i* ]]
+then
+    bind '"\e[A": history-search-backward'
+    bind '"\e[B": history-search-forward'
+fi
+
 # make sure npm bin is added to path
 export PATH="$HOME/.npm-packages/bin:$PATH"
