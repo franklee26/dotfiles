@@ -16,7 +16,7 @@ curl -L https://get.oh-my.fish | fish
 echo "Installing fish packages..."
 
 themes=(
-  robbyrussel
+  robbyrussell
 )
 
 omf install ${themes[@]}
