@@ -1,15 +1,27 @@
 #!/usr/local/bin/bash
 
 # Before running this script:
-# sudo echo '/usr/local/bin/bash' >> /etc/shells
+# sudo echo '/usr/local/bin/fish' >> /etc/shells
 
 # Update homebrew recipes
 brew update
 
 # Install and use latest bash
-brew install bash
-chsh -s /usr/local/bin/bash
+brew install fish
+chsh -s /usr/local/bin/fish
 
+echo "Installing oh my fish..."
+curl -L https://get.oh-my.fish | fish
+
+echo "Installing fish packages..."
+
+themes=(
+  robbyrussel
+)
+
+omf install ${themes[@]}
+
+echo "Installing git..."
 # Install git
 brew install git
 # Some git defaults
@@ -63,8 +75,10 @@ mkdir ~/Projects/go
 
 echo "setting up dotfiles..."
 # Source dot files
-echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
-echo 'export PATH="$HOME/.npm-packages/bin:$PATH"' >> ~/.profile
-source ~/.profile
+ln -s ~/.dotfiles/fish ~/.config/fish
+ln -s ~/.dotfiles/omf ~/.config/omf
+# echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
+# echo 'export PATH="$HOME/.npm-packages/bin:$PATH"' >> ~/.profile
+# source ~/.profile
 
 echo "finished"
