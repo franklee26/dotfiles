@@ -31,3 +31,8 @@ alias ndr="now dns rm"
 # productivity aliases
 alias cdp="cd ~/Projects"
 alias cdh="cd ~"
+
+# gpg aliases / functions
+function sign
+  echo $argv | gpg --clearsign
+end
