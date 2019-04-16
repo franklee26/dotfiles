@@ -32,7 +32,5 @@ alias ndr="now dns rm"
 alias cdp="cd ~/Projects"
 alias cdh="cd ~"
 
-# gpg aliases / functions
-function sign
-  echo $argv | gpg --clearsign
-end
+# cleaning aliases
+alias dsstore="find . -name '*.DS_Store' -type f -ls -delete"

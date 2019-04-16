@@ -78,6 +78,7 @@ echo "setting up dotfiles..."
 ln -s ~/.dotfiles/fish ~/.config/fish
 ln -s ~/.dotfiles/omf ~/.config/omf
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 # echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
 # echo 'export PATH="$HOME/.npm-packages/bin:$PATH"' >> ~/.profile
 # source ~/.profile
