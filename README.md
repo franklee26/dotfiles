@@ -1,9 +1,11 @@
 Personal Dotfiles
 =================
 
-*Heavily inspired by Evan You's dotfiles.*
-
-- Bash customizations for macOS
+- Fish customizations for macOS
     - prompt
     - aliases
+	- functions
+- vim customizations
+	- syntax highlighting
+	- keybinds
 - iTerm2 colors
