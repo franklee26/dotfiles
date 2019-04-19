@@ -21,6 +21,7 @@ abbr gst 'git stash'
 
 # homebrew abbreviations
 abbr bi 'brew install'
+abbr bs 'brew search'
 abbr bci 'brew cask install'
 
 # misc

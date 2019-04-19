@@ -57,7 +57,7 @@ npm install -g ${modules[@]}
 # Apps
 apps=(
   google-chrome
-  firefox
+  firefox-developer-edition
   sublime-text
   visual-studio-code
   sketch
@@ -74,7 +74,7 @@ echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
 # Make some commonly used folders
-mkdir ~/code
+mkdir ~/Code
 
 echo "setting up dotfiles..."
 # Source dot files
