@@ -1,3 +1,6 @@
+# aliases
+alias clear='printf \'\33c\e[3J\''
+
 # git abbreviations
 abbr g 'git'
 abbr ga 'git add'
@@ -25,5 +28,6 @@ abbr bs 'brew search'
 abbr bci 'brew cask install'
 
 # misc
+abbr c 'clear'
 abbr dsstore 'find . -name \'*.DS_Store\' -type f -ls -delete'
 abbr rl 'source ~/.config/fish/config.fish && echo \'~/.config/fish/config.fish\' reloaded'
