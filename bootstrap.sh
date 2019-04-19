@@ -10,8 +10,12 @@ brew update
 brew install fish
 chsh -s /usr/local/bin/fish
 
-echo "Installing oh my fish..."
-curl -L https://get.oh-my.fish | fish
+echo "Installing fisher..."
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+
+mkdir -p $HOME/.config/fisher
+
+ln -s $HOME/.dotfiles/fish/fishfile $HOME/.config/fisher/fishfile
 
 echo "Installing fish packages..."
 
@@ -70,17 +74,12 @@ echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
 # Make some commonly used folders
-mkdir ~/Projects
-mkdir ~/Projects/go
+mkdir ~/code
 
 echo "setting up dotfiles..."
 # Source dot files
 ln -s ~/.dotfiles/fish ~/.config/fish
-ln -s ~/.dotfiles/omf ~/.config/omf
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
-ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-# echo '. ~/.dotfiles/bash/.profile' >> ~/.profile
-# echo 'export PATH="$HOME/.npm-packages/bin:$PATH"' >> ~/.profile
-# source ~/.profile
+ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 echo "finished"

@@ -1,5 +1,0 @@
-la      list include .files
-ll      list detailed info
-md      mkdir and enter it
-port    find processes using port
-clean   remove everything in current dir
