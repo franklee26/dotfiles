@@ -1,4 +1,4 @@
-set -gx EDITOR vim -nw
+set -gx EDITOR vim
 set -gx PAGER less
 
 # Variables
