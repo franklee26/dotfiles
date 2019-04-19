@@ -78,8 +78,8 @@ mkdir ~/Code
 
 echo "setting up dotfiles..."
 # Source dot files
-ln -s ~/.dotfiles/fish ~/.config/fish
-ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
-ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/.config/fish ~/.config/fish
+ln -s ~/.dotfiles/.vimrc ~/.vimrc
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 
 echo "finished"
