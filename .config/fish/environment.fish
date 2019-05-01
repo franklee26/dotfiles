@@ -15,4 +15,5 @@ set PATH $ANDROID_HOME/tools/bin $PATH
 set PATH $ANDROID_HOME/platform-tools $PATH
 set PATH $FLUTTER_HOME/bin $PATH
 set PATH $HOME/.cargo/bin/ $PATH
+set PATH $HOME/.fastlane/bin $PATH
 set PATH /Library/Frameworks/Mono.framework/Versions/Current/bin/ $PATH
