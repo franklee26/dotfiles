@@ -85,6 +85,7 @@ rm ~/.tmux.conf
 rm ~/.gitignore_global
 rm ~/.gitconfig
 rm ~/Library/Application\ Support/Code/User/settings.json
+rm ~/Library/Preferences/com.googlecode.iterm2.plist
 # Source dot files
 ln -s ~/.dotfiles/fish ~/.config/fish
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
@@ -92,5 +93,6 @@ ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/.dotfiles/iterm2/com.google.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
 
 echo "finished"
