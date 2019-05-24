@@ -1,0 +1,94 @@
+{
+  // Breadcrumb Settings
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.filePath": "last",
+  // Bracket Settings
+  "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  "bracket-pair-colorizer-2.showVerticalScopeLine": false,
+  // Editor Settings
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "SF Mono",
+  "editor.fontSize": 12,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.1,
+  "editor.renderWhitespace": "none",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  // Editor Minimap Settings
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.maxColumn": 200,
+  "editor.minimap.showSlider": "always",
+  // Emmet Settings
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Explorer Settings
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  // File Settings
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "files.exclude": {
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/yarn.lock": true
+  },
+  // Git Settings
+  "git.alwaysSignOff": true,
+  "git.enableCommitSigning": true,
+  // Javascript Settings
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  // Language Settings
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false
+  },
+  // SCM Settings
+  "scm.diffDecorations": "overview",
+  // Search Settings
+  "search.showLineNumbers": true,
+  // Telementry Settings
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  // Terminal Settings
+  "terminal.integrated.fontSize": 12,
+  // Window Settings
+  "window.zoomLevel": 0,
+  // Workbench Settings
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.enablePreview": true,
+  // Zen Mode Settings
+  // "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "terminal.integrated.rendererType": "dom",
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.singleQuote": true,
+  "latex-workshop.message.update.show": false,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.recipe.default": "lastUsed"
+}

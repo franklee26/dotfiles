@@ -74,12 +74,23 @@ echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
 # Make some commonly used folders
-mkdir ~/Code
+mkdir ~/projects
+mkdir ~/archives
 
 echo "setting up dotfiles..."
+# Remove currents dot files
+rm ~/.config/fish
+rm ~/.vimrc
+rm ~/.tmux.conf
+rm ~/.gitignore_global
+rm ~/.gitconfig
+rm ~/Library/Application\ Support/Code/User/settings.json
 # Source dot files
-ln -s ~/.dotfiles/.config/fish ~/.config/fish
-ln -s ~/.dotfiles/.vimrc ~/.vimrc
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/fish ~/.config/fish
+ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/git/gitignore_global ~/.gitignore_global
+ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 echo "finished"
