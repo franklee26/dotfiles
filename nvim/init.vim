@@ -10,8 +10,6 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE = 1
-
 set nowrap
 
 set title
@@ -39,3 +37,5 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+set number
