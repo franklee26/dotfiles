@@ -6,7 +6,7 @@
 # Update homebrew recipes
 brew update
 
-# Install and use latest bash
+# Install and use latest fish
 brew install fish
 chsh -s /usr/local/bin/fish
 
@@ -17,26 +17,23 @@ mkdir -p $HOME/.config/fisher
 
 ln -s $HOME/.dotfiles/fish/fishfile $HOME/.config/fisher/fishfile
 
-echo "Installing fish packages..."
-
-themes=(
-  robbyrussell
-)
-
-omf install ${themes[@]}
-
 echo "Installing git..."
 # Install git
 brew install git
 # Some git defaults
 git config --global color.ui true
 git config --global push.default simple
-git config --global user.email "dante.issaias@gmail.com"
-git config --global user.name "Dante Issaias"
 
 packages=(
   go
   node
+  neovim
+  htop
+  neofetch
+  git
+  git-lfs
+  wget
+  tmux
   gnupg
 )
 

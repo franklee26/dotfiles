@@ -1,5 +1,5 @@
 [user]
-  email = dante.issaias@gmail.com
+    email = dante.issaias@gmail.com
 	signingkey = F84A3BA787019A68
 [commit]
 	gpgsign = true
