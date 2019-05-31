@@ -40,6 +40,11 @@ packages=(
 echo "installing packages..."
 brew install ${packages[@]}
 
+# Install vim-plug
+echo "installing vim-plug..."
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Install Node modules
 modules=(
   forever
@@ -90,6 +95,8 @@ ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/.dotfiles/iterm2/com.google.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+ln -s ~/.dotfiles/spicetify ~/.config/spicetify
 
-echo "finished"
+echo "setting up macos..."
+
+. macos/settings.sh

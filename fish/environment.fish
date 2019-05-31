@@ -1,4 +1,4 @@
-set -gx EDITOR vim
+set -gx EDITOR nvim
 set -gx PAGER less
 
 # Variables
@@ -6,6 +6,8 @@ set -gx GPG_TTY (tty)
 set -gx FLUTTER_HOME $HOME/.flutterlib
 set -gx ANDROID_HOME $HOME/Library/Android/sdk
 set -gx LSCOLORS gxfxbEaEBxxEhEhBaDaCaD
+set -gx SPICETIFY_CONFIG $HOME/.config/spicetify
+
 
 # PATH
 set PATH $HOME/.local/bin $PATH

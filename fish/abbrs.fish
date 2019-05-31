@@ -1,29 +1,27 @@
-# -------------------------
-# command improvements
-# -------------------------
+# Improvements to some coreutils commands
 alias clear 'printf \'\33c\e[3J\''
 alias mkdir 'mkdir -pv'
 alias grep 'grep --color'
 
-# -------------------------
-# python aliases
-# -------------------------
+# Alias python to the homebrew installed version
 alias python (brew --prefix)'/bin/python2'
 alias python2 (brew --prefix)'/bin/python2'
 alias python3 (brew --prefix)'/bin/python3'
 
-# -------------------------
-# generic abbreviations
-# -------------------------
+# Shorter versions of some coreutils commands
 abbr l 'ls'
 abbr ll 'ls -FGlAhp'
 abbr c 'clear'
-abbr dsstore 'find . -name \'*.DS_Store\' -type f -ls -delete'
+
+# Basic functions
+alias dsstore 'find . -name \'*.DS_Store\' -type f -ls -delete'
+alias flushdns 'sudo killall -HUP mDNSResponder'
+alias pubkey 'cat ~/.ssh/id_rsa.pub | pbcopy; and echo "=> Public key copied to pasteboard."'
+
+# Reload fish
 abbr rl 'source ~/.config/fish/config.fish && echo \'~/.config/fish/config.fish\' reloaded'
 
-# -------------------------
-# git abbreviations
-# -------------------------
+# Abbreviations of Git commands
 abbr g 'git'
 abbr ga 'git add'
 abbr gb 'git branch'
@@ -44,21 +42,7 @@ abbr grb 'git rebase'
 abbr gs 'git status'
 abbr gst 'git stash'
 
-# -------------------------
-# homebrew abbreviations
-# -------------------------
+# Abbreviations of Homebrew commands
 abbr bi 'brew install'
 abbr bs 'brew search'
 abbr bci 'brew cask install'
-
-# -------------------------
-# application abbreviations
-# -------------------------
-abbr sql 'open -a /Applications/Sequel\ Pro.app'
-abbr www 'open -a /Applications/Firefox\ Developer\ Edition.app'
-
-# ------------------------
-# networking abbreviations
-# ------------------------
-abbr flushdns 'sudo killall -HUP mDNSResponder'
-abbr myip 'curl -s checkip.dyndns.org | sed -e "s/.*Current IP Address: //" -e "s/<.*\$//"'

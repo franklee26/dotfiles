@@ -1,3 +1,9 @@
+call plug#begin('~/.local/share/nvim/plugged')
+
+Plug 'dag/vim-fish'
+
+call plug#end()
+
 syntax on
 syntax enable
 

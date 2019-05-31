@@ -13,6 +13,7 @@
   "editor.fontFamily": "SF Mono",
   "editor.fontSize": 11.5,
   "editor.fontLigatures": true,
+  "editor.fontWeight": "600",
   "editor.lineHeight": 25,
   "editor.letterSpacing": 0.1,
   "editor.renderWhitespace": "none",
@@ -70,7 +71,7 @@
   // Workbench Settings
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.colorTheme": "Winter is Coming (Dark Blue)",
+  "workbench.colorTheme": "Xcode Default (Dark)",
   "workbench.statusBar.feedback.visible": false,
   "workbench.settings.enableNaturalLanguageSearch": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -90,5 +91,8 @@
   "prettier.singleQuote": true,
   "latex-workshop.message.update.show": false,
   "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.recipe.default": "lastUsed"
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "editor.lineNumbers": "on",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
