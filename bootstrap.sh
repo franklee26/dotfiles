@@ -80,15 +80,16 @@ mkdir ~/projects
 mkdir ~/archives
 
 echo "setting up dotfiles..."
-# Remove currents dot files
+
+# Remove current versions of dotfiles
 rm ~/.config/fish
 rm ~/.vimrc
 rm ~/.tmux.conf
 rm ~/.gitignore_global
 rm ~/.gitconfig
 rm ~/Library/Application\ Support/Code/User/settings.json
-rm ~/Library/Preferences/com.googlecode.iterm2.plist
-# Source dot files
+
+# Symbolically link dotfiles
 ln -s ~/.dotfiles/fish ~/.config/fish
 ln -s ~/.dotfiles/vim/vimrc ~/.vimrc
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
