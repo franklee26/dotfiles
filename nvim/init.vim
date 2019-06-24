@@ -1,20 +1,22 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'dag/vim-fish'
+Plug 'leafgarland/typescript-vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
 syntax on
 syntax enable
+"colorscheme base16-default-dark
 
 set nocompatible
 filetype off
 filetype plugin indent on
 
 set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+
+set mouse=a
 
 set nowrap
 
