@@ -7,6 +7,7 @@ set -gx NNN_USE_EDITOR 1
 
 # applications
 set -gx GOPATH $HOME/go
+set -gx GO111MODULE on
 set -gx ANDROID_HOME $HOME/Library/Android/sdk
 set -gx FLUTTER_HOME $HOME/.flutterlib
 set -gx SPICETIFY_CONFIG $HOME/.config/spicetify
