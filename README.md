@@ -1,6 +1,6 @@
 # dotfiles
 
-![dotfiles](https://files.issaias.net/1561910550-dotfiles.png)
+![dotfiles](https://files.issaias.net/1562609148-dotfiles.png)
 
 ## Installation
 
