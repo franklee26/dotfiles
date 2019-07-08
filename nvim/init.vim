@@ -14,7 +14,10 @@ Plug 'itchyny/vim-gitbranch'
 call plug#end()
 
 let mapleader = " "
+
 set termguicolors
+set t_ZH=^[[3m
+set t_ZR=^[[23m
 
 " Plugin settings:
 let g:onedark_terminal_italics=1
