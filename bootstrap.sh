@@ -97,6 +97,9 @@ ln -s ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.dotfiles/spicetify ~/.config/spicetify
+ln -s ~/.dotfiles/yabai/yabairc ~/.yabairc
+ln -s ~/.dotfiles/skhd/skhdrc ~/.skhdrc
+ln -s ~/.dotfiles/kitty/kitty.conf ~/.config/kitty/kitty.conf
 
 echo "setting up macos..."
 

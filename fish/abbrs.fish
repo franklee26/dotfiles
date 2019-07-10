@@ -1,47 +1,42 @@
-alias clear 'printf \'\33c\e[3J\''
-alias mkdir 'mkdir -pv'
-alias grep 'grep --color'
+function ssh; env TERM=xterm ssh $argv; end
+function clear; printf '\33c\e[3J'; end
+function mkdir; mkdir -pv $argv; end
+function grep; grep --color $argv; end
 
-# python
-alias python (brew --prefix)'/bin/python2'
-alias python2 (brew --prefix)'/bin/python2'
-alias python3 (brew --prefix)'/bin/python3'
-
-alias f 'nnn'
-alias m 'gomuks'
-alias l 'ls'
-alias ll 'ls -lA'
+function f; nnn; end
+function m; gomuks; end
+function l; ls; end
+function ll; ls -l; end
 
 # util
-alias dsstore 'find . -name \'*.DS_Store\' -type f -ls -delete'
-alias flushdns 'sudo killall -HUP mDNSResponder'
-alias pubkey 'cat ~/.ssh/id_rsa.pub | pbcopy; and echo "=> Public key copied to pasteboard."'
+function dsstore; find . -name '*.DS_Store' -type f -ls -delete; end
+function flushdns; sudo killall -HUP mDNSResponder; end
+function pubkey; cat ~/.ssh/id_rsa.pub | pbcopy; and echo "=> Public key copied to pasteboard."; end
 
 # reload
-alias rl 'source ~/.config/fish/config.fish && echo \'~/.config/fish/config.fish\' reloaded'
+function rl; source ~/.config/fish/config.fish && echo '~/.config/fish/config.fish reloaded'; end
 
 # git
-alias ga 'git add'
-alias gb 'git branch'
-alias gbl 'git blame'
-alias gc 'git commit -s'
-alias gca 'git commit --amend -s'
-alias gco 'git checkout'
-alias gcp 'git cherry-pick'
-alias gd 'git diff'
-alias gf 'git fetch'
-alias gl 'git log'
-alias gm 'git merge'
-alias gp 'git push'
-alias gpf 'git push --force-with-lease'
-alias gpl 'git pull'
-alias gr 'git remote'
-alias grb 'git rebase'
-alias gs 'git status'
-alias gst 'git stash'
-alias currentbranch 'git branch | grep \* | cut -d \' \' -f2'
+function ga; git add $argv; end
+function gb; git branch $argv; end
+function gbl; git blame $argv; end
+function gc; git commit -s $argv; end
+function gca; git commit --amend -s $argv; end
+function gco; git checkout $argv; end
+function gcp; git cherry-pick $argv; end
+function gd; git diff $argv; end
+function gf; git fetch $argv; end
+function gl; git log $argv; end
+function gm; git merge $argv; end
+function gp; git push $argv; end
+function gpf; git push --force-with-lease $argv; end
+function gpl; git pull $argv; end
+function gr; git remote $argv; end
+function grb; git rebase $argv; end
+function gs; git status $argv; end
+function gst; git stash $argv; end
 
 # brew
-alias bi 'brew install'
-alias bs 'brew search'
-alias bci 'brew cask install'
+function bi; brew install $argv; end
+function bs; brew search $argv; end
+function bci; brew cask install $argv; end

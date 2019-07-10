@@ -13,8 +13,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 call plug#end()
 
-let mapleader = " "
-
 set termguicolors
 set t_ZH=^[[3m
 set t_ZR=^[[23m
