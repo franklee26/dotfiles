@@ -1,9 +1,9 @@
 function ssh; env TERM=xterm ssh $argv; end
 function clear; printf '\33c\e[3J'; end
-function mkdir; mkdir -pv $argv; end
+function mkdir; bash -c "mkdir -pv $argv"; end
 function grep; grep --color $argv; end
 
-function f; nnn; end
+function f; env TERM=xterm-kitty ranger; end
 function m; gomuks; end
 function l; ls; end
 function ll; ls -l; end

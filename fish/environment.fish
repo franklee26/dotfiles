@@ -5,8 +5,11 @@ set -gx GPG_TTY (tty)
 set -gx LSCOLORS gxfxbEaEBxxEhEhBaDaCaD
 set -gx NNN_USE_EDITOR 1
 
+# locations
+set -gx PROJECTS $HOME/Repos
+
 # applications
-set -gx GOPATH $HOME/go
+set -gx GOPATH $PROJECTS/go
 set -gx GO111MODULE on
 set -gx ANDROID_HOME $HOME/Library/Android/sdk
 set -gx FLUTTER_HOME $HOME/.flutterlib

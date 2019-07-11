@@ -7,20 +7,21 @@ Plug 'oblitum/rainbow'
 Plug 'mcchrish/nnn.vim'
 Plug 'shmup/vim-sql-syntax'
 Plug 'w0rp/ale'
-Plug 'joshdick/onedark.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+Plug 'drewtempelmeyer/palenight.vim'
 call plug#end()
 
-set termguicolors
+au ColorScheme * hi Normal ctermbg=none guibg=none
+au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
+
 set t_ZH=^[[3m
 set t_ZR=^[[23m
+set termguicolors
 
 " Plugin settings:
-let g:onedark_terminal_italics=1
 let g:lightline = {
-  \ "colorscheme" : "onedark",
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -28,9 +29,9 @@ let g:lightline = {
   \ 'component_function': {
   \   'gitbranch': 'gitbranch#name'
   \ },
-  \ 'separator': { 'left': '', 'right': '' },
-	\ 'subseparator': { 'left': '', 'right': '' }
   \ }
+let g:lightline.colorscheme = "palenight"
+let g:palenight_terminal_italics=1
 let g:go_highlight_structs = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_functions = 1
@@ -52,7 +53,7 @@ let g:ale_fixers = {
 
 syntax on
 syntax enable
-colorscheme onedark
+colorscheme palenight
 filetype off
 filetype plugin indent on
 
