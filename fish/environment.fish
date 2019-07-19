@@ -23,5 +23,5 @@ set PATH $ANDROID_HOME/tools/bin $PATH
 set PATH $ANDROID_HOME/platform-tools $PATH
 set PATH $FLUTTER_HOME/bin $PATH
 set PATH $GOPATH/bin $PATH
-
-
+set PATH $HOME/.local/bin $PATH
+set PATH $HOME/Library/Python/3.7/bin $PATH
