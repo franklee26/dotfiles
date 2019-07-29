@@ -10,69 +10,51 @@ Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
-Plug 'drewtempelmeyer/palenight.vim'
+Plug 'kaicataldo/material.vim'
 call plug#end()
 
+" Fix Transparent Background
 au ColorScheme * hi Normal ctermbg=none guibg=none
 au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
-set t_ZH=^[[3m
-set t_ZR=^[[23m
+"set t_ZH=^[[3m
+"set t_ZR=^[[23m
 set termguicolors
 
-" Plugin settings:
-let g:lightline = {
-  \ 'active': {
-  \   'left': [ [ 'mode', 'paste' ],
-  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-  \ },
-  \ 'component_function': {
-  \   'gitbranch': 'gitbranch#name'
-  \ },
-  \ }
-let g:lightline.colorscheme = "palenight"
-let g:palenight_terminal_italics=1
-let g:go_highlight_structs = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_types = 1
-let g:go_code_completion_enabled = 1
-let g:go_fmt_command = "goimports"
-let g:dart_format_on_save = 1
-let g:prettier#autoformat = 0
-let g:ale_fix_on_save = 1
-let g:ale_fixers = {
-\   'javascript': ['prettier'],
-\   'css': ['prettier'],
-\   'html': ['prettier'],
-\   'typescript' : ['prettier'],
-\}
+source ~/.dotfiles/nvim/plugins.vim
 
+" Syntax
 syntax on
 syntax enable
-colorscheme palenight
+
+" Colorscheme
+colorscheme material
+
+" Filetype
 filetype off
 filetype plugin indent on
 
+" Intentation
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set autoindent
+set cindent
+
+" Misc Settings
 set nowrap
 set title
 set ignorecase
 set smartcase
 set incsearch
-set autoindent
-set cindent
 set ruler
 set showmatch
 set encoding=utf-8
 set wildmode=longest,list,full
 set number relativenumber
 set splitbelow splitright
+set clipboard=unnamedplus
 
+" Automatic Functions
 autocmd BufWritePre * %s/\s\+$//e
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
