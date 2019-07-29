@@ -1,6 +1,9 @@
 # open terminal
 cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
 
+# open ragner
+shift + cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~ fish -c f
+
 # focus window
 alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
@@ -39,8 +42,8 @@ shift + cmd - n : yabai -m space --create;\
 
 # create desktop and follow focus
 cmd + alt - n : yabai -m space --create;\
-                id=$(yabai -m query --displays --display | grep "spaces");\
-                yabai -m space --focus $(echo ${id:10:${#id}-10})
+                  index="$(yabai -m query --displays --display | jq '.spaces[-1]')" && \
+                  yabai -m space --focus "${index}"
 
 # destroy desktop
 cmd + alt - w : yabai -m space --destroy
