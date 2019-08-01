@@ -5,7 +5,7 @@ function grep; bash -c "grep --color $argv"; end
 
 function f; env TERM=xterm-kitty ranger; end
 function m; gomuks; end
-function l; ls; end
+function l; ls -a; end
 function ll; ls -la; end
 
 # util
