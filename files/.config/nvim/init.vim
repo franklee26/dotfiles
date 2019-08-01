@@ -30,5 +30,6 @@ syntax on
 syntax enable
 
 " Automatic Functions
+au VimLeave * set guicursor=a:ver25-blinkwait700-blinkon400-blinkoff250
 autocmd BufWritePre * %s/\s\+$//e
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
