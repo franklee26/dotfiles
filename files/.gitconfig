@@ -1,0 +1,31 @@
+; vim: ft=gitconfig
+
+[gpg]
+	program = /usr/local/bin/gpg
+
+[commit]
+	verbose = true
+	gpgsign = true
+
+[core]
+	editor = $EDITOR
+	commitGraph = true
+	whitespace=fix,space-before-tab,tab-in-indent,trailing-space,cr-at-eol
+	excludesfile = ~/.git.d/.gitignore
+
+[branch]
+	autosetupmerge = always
+	autosetuprebase = always
+
+[tag]
+	forceSignAnnotated = true
+
+[apply]
+	whitespace = nowarn
+
+[color]
+	ui = true
+
+
+[include]
+	path = ~/.gitconfig.local
