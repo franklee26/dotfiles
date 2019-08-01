@@ -10,6 +10,7 @@ Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/vim-gitbranch'
 Plug 'andreypopp/vim-colors-plain'
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 " Fix Transparent Background
