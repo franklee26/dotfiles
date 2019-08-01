@@ -39,6 +39,7 @@ brew "nnn"
 brew "figlet"
 brew "editorconfig"
 
+cask "iterm2-nightly"
 cask "kitty"
 cask "keybase"
 cask "sketch"
