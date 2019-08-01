@@ -1,5 +1,5 @@
 function fish_prompt
-	set_color 565656
+	set_color 757575
 	echo -n (prompt_pwd)
 	set_color e2ba6e
 	echo " » "
