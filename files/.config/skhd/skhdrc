@@ -1,11 +1,5 @@
 # open terminal
-cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~
-
-# open ragner
-shift + cmd - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~ fish -c f
-
-# open htop
-shift + alt - return : /Applications/Kitty.app/Contents/MacOS/kitty --single-instance -d ~ htop
+cmd - return : ~/.dotfiles/scripts/iterm.sh
 
 # screenshot
 shift + alt + cmd - s : ~/.dotfiles/scripts/screenshot.sh
@@ -165,4 +159,3 @@ alt - p : yabai -m window --toggle sticky;\
 # change layout of desktop
 ctrl + alt - a : yabai -m space --layout bsp
 ctrl + alt - d : yabai -m space --layout float
-
