@@ -21,6 +21,7 @@ au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 "set t_ZR=^[[23m
 set termguicolors
 
+source ~/.config/nvim/filetype.vim
 source ~/.config/nvim/plugin/settings.vim
 source ~/.config/nvim/plugin/colors.vim
 

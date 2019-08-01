@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/dante/.config'
-let g:netrw_dirhist_2='/Users/dante/.config/.mono'
-let g:netrw_dirhist_3='/Users/dante/Repos'
-let g:netrw_dirhist_4='/Users/dante/.dotfiles/files/.config/nvim/plugin'
-let g:netrw_dirhist_5='/Users/dante/.vim'
