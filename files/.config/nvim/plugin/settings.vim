@@ -16,9 +16,12 @@ set noshowmode
 set secure
 
 set showmatch
-set title
 set ruler
 set rnu
+
+" Set title to filename
+set title
+set titlestring=%t
 
 " More Natural Splitting
 set splitbelow
