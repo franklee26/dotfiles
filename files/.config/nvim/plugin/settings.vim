@@ -18,6 +18,7 @@ set secure
 set showmatch
 set title
 set ruler
+set rnu
 
 " More Natural Splitting
 set splitbelow
