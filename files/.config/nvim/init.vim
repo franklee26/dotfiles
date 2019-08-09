@@ -25,6 +25,7 @@ set termguicolors
 source ~/.config/nvim/filetype.vim
 source ~/.config/nvim/plugin/settings.vim
 source ~/.config/nvim/plugin/colors.vim
+source ~/.config/nvim/plugin/go.vim
 
 " Syntax
 syntax on

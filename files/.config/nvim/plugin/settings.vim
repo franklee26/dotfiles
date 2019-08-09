@@ -18,6 +18,7 @@ set secure
 set showmatch
 set ruler
 set rnu
+set number
 
 " Set title to filename
 set title

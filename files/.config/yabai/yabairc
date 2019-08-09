@@ -44,11 +44,7 @@ yabai -m rule --add app="Firefox Developer Edition" space=3
 yabai -m rule --add app=TIDAL space=4
 yabai -m rule --add app="^System Preferences$" manage=off border=off
 yabai -m rule --add app=Preview manage=off border=off
-yabai -m query --windows \
-    | jq '.[] | select(.shadow == 0 and (.app == "System Preferences" or .app == "Preview")).id' \
-    | xargs -I{} yabai -m window {} --toggle shadow
-yabai -m signal --add event=window_created  app='^(System Preferences|Preview)$' \
-    action='yabai -m window "${YABAI_WINDOW_ID}" --toggle shadow'
+yabai -m rule --add app=macfeh manage=off
 
 echo "yabai configuration loaded.."
 
