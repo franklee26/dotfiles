@@ -1,20 +1,20 @@
 # dotfiles
 
-Inspired by @ahmedelgabri's dotfiles. The config is managed by [GNU stow](https://www.gnu.org/software/stow/).
+My portable development environment for macOS. The config is managed by [GNU stow](https://www.gnu.org/software/stow/).
 
 ## What's in it?
 
 These are the main configs:
 
-* Homebrew
-* Neovim
-* Fish
-* Kitty
-* Git
+* Homebrew Brewfile
+* NeoVim Configuration
+* Sensible macOS Defaults
+* KiTTY Configuration
+* Git Configuration
 
 ## Installation
 
 ```
-$ git clone https://github.com/danteissaias/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && make install
+$ git clone https://gitlab.issaias.net/dante/dotfiles.git ~/.dotfiles && cd ~/.dotfiles && make install
 ```
 
