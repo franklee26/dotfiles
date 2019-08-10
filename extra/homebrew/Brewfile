@@ -11,6 +11,7 @@ tap "homebrew/services"
 # Core
 brew "openssl"
 brew "git"
+brew "git-lfs"
 brew "fish"
 brew "gnupg"
 brew "wget"
