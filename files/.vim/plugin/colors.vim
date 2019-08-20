@@ -3,4 +3,4 @@ if has('termguicolors')
 end
 
 set background=dark
-colorscheme plain
+colorscheme onedark

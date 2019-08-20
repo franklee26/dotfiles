@@ -39,9 +39,3 @@ set noerrorbells
 
 " Yank and paste with system clipboard
 set clipboard=unnamed
-
-" Show trailing spaces
-set list
-set listchars=nbsp:░,tab:▷\ ,extends:»,precedes:«,trail:•
-set nojoinspaces
-set concealcursor=n

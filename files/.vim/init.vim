@@ -1,17 +1,11 @@
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
 Plug 'ciaranm/detectindent'
-Plug 'mattn/emmet-vim'
-Plug 'oblitum/rainbow'
-Plug 'mcchrish/nnn.vim'
 Plug 'shmup/vim-sql-syntax'
-Plug 'w0rp/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/vim-gitbranch'
-Plug 'andreypopp/vim-colors-plain'
-Plug 'mhinz/vim-startify'
-Plug 'sjl/vitality.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'w0rp/ale'
 call plug#end()
 
 " Fix Transparent Background
@@ -34,3 +28,7 @@ syntax enable
 " Automatic Functions
 autocmd BufWritePre * %s/\s\+$//e
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+augroup DetectIndent
+   autocmd!
+   autocmd BufReadPost *  DetectIndent
+augroup END

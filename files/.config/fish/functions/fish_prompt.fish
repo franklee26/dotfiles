@@ -1,7 +1,17 @@
 function fish_prompt
-	printf "\e[5 q"
-	set_color 757575
-	echo -n (prompt_pwd)
-	set_color e2ba6e
-	echo " » "
+	set_color red
+	echo -n "["
+	set_color yellow --bold
+	echo -n (whoami)
+	set_color green
+	echo -n "@"
+	set_color blue --bold
+	echo -n (prompt_hostname)
+	echo -n " "
+	set_color magenta --bold
+	echo -n (basename (pwd))
+	set_color red
+	echo -n "]"
+	set_color white
+	echo -n "\$ "
 end
